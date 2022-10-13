@@ -14,6 +14,12 @@ The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software. 
 -->
 
+<p align="center">
+    <a href="https://wakatime.com/@910c923e-70f7-4533-ae9c-228f67fea39b">
+        <img alt="Wakatime stats" src="https://wakatime.com/badge/user/910c923e-70f7-4533-ae9c-228f67fea39b.svg?style=flat-square">
+    </a>
+</p>
+
 ### Hi there👋
 
 - 👋 Hi, I’m @sheduxdev
@@ -25,6 +31,12 @@ copies or substantial portions of the Software.
 <p align="center">
     <a href="https://discord.com/users/458172960675594251">
         <img alt="My discord" src="https://lanyard.cnrad.dev/api/458172960675594251?hideBadges=true&hideStatus=true">
+    </a>
+</p>
+
+<p align="center">
+    <a href="https://wakatime.com/@910c923e-70f7-4533-ae9c-228f67fea39b">
+        <img alt="Wakatime profile" src="https://github-readme-stats.vercel.app/api/wakatime?username=sheduxdev&layout=compact&langs_count=5&&theme=dracula&hide_border=true&bg_color=1a1c1f&icon_color=4e90f0&title=e74545&border_radius=10">
     </a>
 </p>
 
