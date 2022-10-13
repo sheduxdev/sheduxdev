@@ -25,7 +25,6 @@ copies or substantial portions of the Software.
 - 👋 Hi, I’m @sheduxdev
 - 🔭 I’m currently working on [RenardMC](https://renardmc.net)
 - 📫 How to reach me: sheduxdev#2007
-- ⚡ Fun fact: I love zenci got
 
 --- 
 
