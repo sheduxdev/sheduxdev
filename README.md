@@ -15,9 +15,7 @@ copies or substantial portions of the Software.
 -->
 
 <p align="center">
-    <a href="https://wakatime.com/@910c923e-70f7-4533-ae9c-228f67fea39b">
-        <img alt="Wakatime stats" src="https://wakatime.com/badge/user/910c923e-70f7-4533-ae9c-228f67fea39b.svg?style=flat-square">
-    </a>
+<a href="https://wakatime.com/@910c923e-70f7-4533-ae9c-228f67fea39b"><img src="https://wakatime.com/badge/user/910c923e-70f7-4533-ae9c-228f67fea39b.svg" alt="Total time coded since Oct 13 2022" /></a>
 </p>
 
 ### Hi there👋
