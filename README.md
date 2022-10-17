@@ -16,7 +16,7 @@ copies or substantial portions of the Software.
 
 <p align="center">
 <a href="https://wakatime.com/@910c923e-70f7-4533-ae9c-228f67fea39b"><img src="https://wakatime.com/badge/user/910c923e-70f7-4533-ae9c-228f67fea39b.svg" alt="Total time coded since Oct 13 2022" /></a>
-[![Profile Views](https://komarev.com/ghpvc/?username=sheduxdev&style=for-the-badge&color=orange)](https://github.com/sheduxdev)
+[![Profile Views](https://komarev.com/ghpvc/?username=sheduxdev&style=for-the-badge&color=orange)](https://github.com/sheduxdev)]
 </p>
 
 ### Hi there👋
