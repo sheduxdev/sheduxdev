@@ -13,25 +13,8 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software. 
 -->
-
-### Hi there👋
-
-- 👋 Hi, I’m @sheduxdev
-- 🔭 I’m currently working on [FoudreStudios](https://foudrestudios.com.tr)
-- 📫 How to reach me: sheduxdev#2007
-
---- 
-
 <p align="center">
     <a href="https://discord.com/users/458172960675594251">
         <img alt="My discord" src="https://lanyard.cnrad.dev/api/458172960675594251?hideBadges=true&hideStatus=true">
     </a>
 </p>
-
-<p align="center">
-    <a href="https://github.com/sheduxdev">
-        <img alt="Github" src="https://github-readme-stats.vercel.app/api?username=sheduxdev&theme=dracula&show_icons=true&hide_border=true&bg_color=1a1c1f&icon_color=4e90f0&title=e74545&border_radius=10&card_width=410">
-    </a>
-</p>
-
-#
