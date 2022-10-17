@@ -21,7 +21,7 @@ copies or substantial portions of the Software.
 ### Hi there👋
 
 - 👋 Hi, I’m @sheduxdev
-- 🔭 I’m currently working on [RenardMC](https://renardmc.net)
+- 🔭 I’m currently working on [FoudreStudios](https://foudrestudios.com.tr)
 - 📫 How to reach me: sheduxdev#2007
 
 --- 
