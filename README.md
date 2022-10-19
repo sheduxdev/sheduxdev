@@ -1,20 +1,28 @@
-<!-- 
-MIT License
+<div align=center>
+        <img src= "https://readme-typing-svg.herokuapp.com?color=%236FDA44&size=32&center=true&vCenter=true&width=600&height=50&lines=Hi+there,+I'am Deniz USTA;Java Developer;" alt="Headline" />
+</div>
 
-Copyright (c) 2022 Deniz USTA
+----
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+### Contact Me
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software. 
--->
-<p align="center">
-    <a href="https://discord.com/users/458172960675594251">
-        <img alt="My discord" src="https://lanyard.cnrad.dev/api/458172960675594251?hideBadges=true&hideStatus=true">
-    </a>
-</p>
+> - **Discord** - [sheduxdev#2007](discordapp.com/users/458172960675594251)
+> - **I'am currently work on** - [FoudreStudios](foudrestudios.com.tr)
+
+----
+
+### Github Stats
+
+<table border="0" align="center">
+    <tr border="0">
+        <td width="50%" align="center">
+            <img align="center"; src="https://github-readme-stats.vercel.app/api?username=sheduxdev&theme=onedark&show_icons=true&count_private=true" />
+            <img src="https://github-readme-streak-stats.herokuapp.com/?user=sheduxdev&theme=dark&hide_border=true" />
+        </td>
+        <td width="50%" align="center">
+            <img align="center"; width=100%; src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=sheduxdev&theme=dark&hide_border=true&no-bg=true&no-frame=true&langs_count=10" />
+        </td>
+    </tr>
+</table>
+
+<br />
