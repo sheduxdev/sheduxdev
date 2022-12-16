@@ -6,8 +6,8 @@
 
 ### Contact Me
 
-> - **Discord** - [sheduxdev#2007](https://discordapp.com/users/458172960675594251)
-> - **I'am currently work on** - [FoudreStudios](https://foudrestudios.com.tr)
+> - **Discord** - [sheduxdev#1881](https://discordapp.com/users/458172960675594251)
+> - **I'am currently work on** - [FoudreStudios](https://github.com/FoudreStudios)
 
 ----
 
