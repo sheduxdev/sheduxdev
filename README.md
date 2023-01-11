@@ -1,9 +1,3 @@
-<div align=center>
-        <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&center=true&color=F7E993&width=600&height=50&lines=Hi+There!;I'am+Deniz+USTA;I'+am+Java+Developer" alt="Typing SVG" />
-</div>
-
-----
-
 ### Contact Me
 
 > - **Discord** - [sheduxdev#1881](https://discordapp.com/users/458172960675594251)
