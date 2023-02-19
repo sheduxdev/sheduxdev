@@ -6,7 +6,11 @@
 > 
 > [![Discord Status](https://lanyard.cnrad.dev/api/458172960675594251)](https://discord.com/channels/@me/458172960675594251)
 
-----
+### 🔧 Languages & Tools
+
+- [![OS Windows](https://img.shields.io/badge/OS-Windows-0078D6?style=flat-square&logo=windows&logoColor=blue)](https://www.microsoft.com/windows)
+- [![Editor Intellij IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)]([https://code.visualstudio.com/](https://www.jetbrains.com/idea/))
+- [![Code Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com/tr/)
 
 ### Github Stats
 
