@@ -3,6 +3,7 @@
 > - **Discord** - [sheduxdev#2007](https://discordapp.com/users/458172960675594251)
 > - **I'am founder ceo** @ [FoudreStudios](https://github.com/FoudreStudios)
 > - [![](https://visitcount.itsvg.in/api?id=sheduxdev&label=Profile%20Views&color=0&icon=0&pretty=true)](https://visitcount.itsvg.in)
+> 
 > [![Discord Status](https://lanyard.cnrad.dev/api/458172960675594251)](https://discord.com/channels/@me/458172960675594251)
 
 ----
