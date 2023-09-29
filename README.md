@@ -1,7 +1,7 @@
 ### Contact Me
 
-> - **Discord** - [sheduxdev#2007](https://discordapp.com/users/458172960675594251)
-> - **I'am founder ceo** @ [FoudreStudios](https://github.com/FoudreStudios)
+> - **Discord** - [sheduxdev](https://discordapp.com/users/458172960675594251)
+> - **I'am founder ceo** @ [Foudre Technologies](https://github.com/FoudreTechnologies)
 > - ![](https://img.shields.io/github/followers/sheduxdev?style=flat&label=Followers)
 > - ![](https://komarev.com/ghpvc/?username=sheduxdev&label=Profile%20views&color=0e75b6&style=flat)
 > 
