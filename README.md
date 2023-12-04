@@ -1,11 +1,11 @@
 ### Contact Me
 
 > - **Discord** - [sheduxdev](https://discordapp.com/users/458172960675594251)
-> - **I'am founder ceo** @ [Foudre Technologies](https://github.com/FoudreTechnologies)
+> - **I'am owner & developer** @ [Crage Network](https://github.com/Crage-Network)
 > - ![](https://img.shields.io/github/followers/sheduxdev?style=flat&label=Followers)
 > - ![](https://komarev.com/ghpvc/?username=sheduxdev&label=Profile%20views&color=0e75b6&style=flat)
 > 
-> [![Discord Status](https://lanyard.cnrad.dev/api/458172960675594251)](https://discord.com/channels/@me/458172960675594251)
+> [![Discord Status](https://lanyard.cnrad.dev/api/458172960675594251)]([https://discord.com/channels/@me/458172960675594251](https://discordapp.com/users/458172960675594251))
 
 ### Github Stats
 
