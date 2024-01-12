@@ -3,7 +3,7 @@ Merhaba ben Deniz ve **yazılım mühendisliği meraklısıyım**.
 
 Kendi projelerimin yanı sıra, geliştirici ve piyasada insanlara yardımcı olmak amacıyla birçok projeyi ya ücretsiz ya da uygun bir fiyat karşılığında sunuyorum. Bu projelerle ilgili gelen geri bildirimleri değerlendirerek sürekli kendimi geliştiriyorum.
 
-Java, PhP ve Node.js ile olan deneyimim [Discord](https://discord.com/), [Minecraft](https://minecraft.net/) adlı platform ve oyunda bir sürü şey yapmama olanak sağladı.
+Java, PhP ve Node.js ile olan deneyimim [Discord](https://discord.com/) adlı platform ve [Minecraft](https://minecraft.net/) oyununda bir sürü şey yapmama olanak sağladı.
 
 [![](https://skillicons.dev/icons?i=instagram)](https://www.instagram.com/sheduxdev/)
 [![](https://skillicons.dev/icons?i=twitter)](https://twitter.com/sheduxdev)
