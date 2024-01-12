@@ -10,5 +10,5 @@ Java, PhP ve Node.js ile olan deneyimim [Discord](https://discord.com/) adlı pl
 [![](https://skillicons.dev/icons?i=discord)](https://discord.com/users/458172960675594251)
 
 # Kullandığım Yazılımlar
-![](https://skillicons.dev/icons?i=js,java,php,mysql,css,html,tailwind,firebase,bootstrap,dotnet,electron,express,vscode,figma,git,gradle,maven,idea&perline=9)
+![](https://skillicons.dev/icons?i=arduino,c,cs,cpp,cloudflare,wordpress,postman,nginx,md,jquery,gcp,js,java,php,mysql,css,html,tailwind,firebase,bootstrap,dotnet,electron,express,vscode,figma,git,gradle,maven,idea&perline=9)
 <br />
