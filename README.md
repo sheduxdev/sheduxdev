@@ -1,7 +1,7 @@
 ### Contact Me
 
 > - **Discord** - [sheduxdev](https://discordapp.com/users/458172960675594251)
-> - **I'am owner & developer** @ [Crage Network](https://github.com/Crage-Network)
+> - **I'm founder of ** @ [Güvenilir mi?](https://github.com/guvenilirmi-tr)
 > - ![](https://img.shields.io/github/followers/sheduxdev?style=flat&label=Followers)
 > - ![](https://komarev.com/ghpvc/?username=sheduxdev&label=Profile%20views&color=0e75b6&style=flat)
 > 
