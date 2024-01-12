@@ -1,24 +1,14 @@
-### Contact Me
+# Hakkımda
+Merhaba ben Deniz ve **yazılım mühendisliği meraklısıyım**.
 
-> - **Discord** - [sheduxdev](https://discordapp.com/users/458172960675594251)
-> - **I'm founder of ** @ [Güvenilir mi?](https://github.com/guvenilirmi-tr)
-> - ![](https://img.shields.io/github/followers/sheduxdev?style=flat&label=Followers)
-> - ![](https://komarev.com/ghpvc/?username=sheduxdev&label=Profile%20views&color=0e75b6&style=flat)
-> 
-> [![Discord Status](https://lanyard.cnrad.dev/api/458172960675594251)]([https://discord.com/channels/@me/458172960675594251](https://discordapp.com/users/458172960675594251))
+Kendi projelerimin yanı sıra, geliştirici ve piyasada insanlara yardımcı olmak amacıyla birçok projeyi ya ücretsiz ya da uygun bir fiyat karşılığında sunuyorum. Bu projelerle ilgili gelen geri bildirimleri değerlendirerek sürekli kendimi geliştiriyorum.
 
-### Github Stats
+Java, PhP ve Node.js ile olan deneyimim [Discord](https://discord.com/), [Minecraft](https://minecraft.net/) adlı platform ve oyunda bir sürü şey yapmama olanak sağladı.
 
-<table border="0" align="center">
-    <tr border="0">
-        <td width="50%" align="center">
-            <img align="center"; src="https://github-readme-stats.vercel.app/api?username=sheduxdev&theme=onedark&show_icons=true&count_private=true" />
-            <img src="https://github-readme-streak-stats.herokuapp.com/?user=sheduxdev&theme=dark&hide_border=true" />
-        </td>
-        <td width="50%" align="center">
-            <img align="center"; width=100%; src="https://github-readme-stats.vercel.app/api/top-langs/?username=sheduxdev&show_icons=true&layout=compact&theme=dark" />
-        </td>
-    </tr>
-</table>
+[![](https://skillicons.dev/icons?i=instagram)](https://www.instagram.com/sheduxdev/)
+[![](https://skillicons.dev/icons?i=twitter)](https://twitter.com/sheduxdev)
+[![](https://skillicons.dev/icons?i=discord)](https://discord.com/users/458172960675594251)
 
+# Kullandığım Yazılımlar
+![](https://skillicons.dev/icons?i=js,java,php,mysql,css,html,tailwind,firebase,bootstrap,dotnet,electron,express,vscode,figma,git,gradle,maven,idea&perline=6)
 <br />
