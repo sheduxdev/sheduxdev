@@ -32,7 +32,7 @@ tek başıma taşıyorum, DevOps ve güvenlik dahil.
 <img width="49%" alt="En çok kullanılan diller" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sheduxdev&layout=compact&hide_border=true&bg_color=00000000&title_color=8b949e&text_color=8b949e&langs_count=8" />
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sheduxdev/sheduxdev/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sheduxdev/sheduxdev/output/snake-light.svg" />
-  <img alt="Katkı grafiğini yiyen yılan" src="https://raw.githubusercontent.com/sheduxdev/sheduxdev/output/snake-dark.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/snake-light.svg" />
+  <img alt="Katkı grafiğini yiyen yılan" src="assets/snake-dark.svg" width="100%" />
 </picture>
