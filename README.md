@@ -36,8 +36,3 @@ tek başıma taşıyorum, DevOps ve güvenlik dahil.
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sheduxdev/sheduxdev/output/snake-light.svg" />
   <img alt="Katkı grafiğini yiyen yılan" src="https://raw.githubusercontent.com/sheduxdev/sheduxdev/output/snake-dark.svg" width="100%" />
 </picture>
-
----
-
-<sub>Başlık ve yığın panellerini <code>scripts/build-assets.py</code> üretiyor. Sen fontu SVG'nin
-içinde gömülü, sayfa dışarıdan font çekmiyor.</sub>
