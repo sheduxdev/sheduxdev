@@ -1,7 +1,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg" />
-  <img alt="Deniz Usta — full stack geliştirici, TurkishPvP LLC" src="assets/header-dark.svg" width="100%" />
+  <img alt="Deniz Usta, full stack geliştirici, TurkishPvP LLC" src="assets/header-dark.svg" width="100%" />
 </picture>
 
 <a href="https://turkishpvp.llc">Site</a> ·
@@ -12,26 +12,17 @@
 
 ### Ne yapıyorum
 
-Java birincil dilim, yan uğraş değil. Minecraft tarafında tek bir plugin'den bütün bir network
-mimarisine kadar her katmanı kuruyorum: özel anticheat, oyun motoru işleri, gerçekten ayakta kalan
-mikroservisler.
+Java birincil dilim. Minecraft tarafında tek bir plugin'den network mimarisinin tamamına kadar her
+katmanı kuruyorum: özel anticheat, oyun motoru işleri, mikroservisler. Ön yüzden bare metal'e kadar
+tek başıma taşıyorum, DevOps ve güvenlik dahil.
 
-Ön yüzden bare metal'e kadar tek başıma taşıyabildiğim bir yığın var. Açtığım kapıları kendim
-kilitliyorum — DevOps ve güvenlik işin ayrı bir kalemi değil, aynı işin parçası.
+Şu an TurkishPvP altyapısını ölçeklendiriyorum.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/stack-light.svg" />
   <img alt="Kullandığım diller, ön yüz, arka yüz ve altyapı araçları" src="assets/stack-dark.svg" width="100%" />
 </picture>
-
----
-
-### Şu an
-
-- TurkishPvP altyapısını ölçeklendirmek
-- Özel anticheat ve oyun motoru işleri
-- Ayakta kalan mikroservisler
 
 ---
 
@@ -48,5 +39,5 @@ kilitliyorum — DevOps ve güvenlik işin ayrı bir kalemi değil, aynı işin 
 
 ---
 
-<sub>Başlık ve yığın panelleri <code>scripts/build-assets.py</code> ile üretiliyor — Sen fontu SVG'nin
-içine gömülü, dışarıdan hiçbir şey çekmiyor. En iyi işlerim aşağıda sabitli.</sub>
+<sub>Başlık ve yığın panellerini <code>scripts/build-assets.py</code> üretiyor. Sen fontu SVG'nin
+içinde gömülü, sayfa dışarıdan font çekmiyor.</sub>
