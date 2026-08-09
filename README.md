@@ -28,8 +28,8 @@ tek başıma taşıyorum, DevOps ve güvenlik dahil.
 
 ### Rakamlar
 
-<img width="49%" alt="GitHub istatistikleri" src="https://github-readme-stats.vercel.app/api?username=sheduxdev&show_icons=true&hide_border=true&bg_color=00000000&title_color=8b949e&text_color=8b949e&icon_color=bb0000&ring_color=bb0000&count_private=true&include_all_commits=true&rank_icon=github" />
-<img width="49%" alt="En çok kullanılan diller" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sheduxdev&layout=compact&hide_border=true&bg_color=00000000&title_color=8b949e&text_color=8b949e&langs_count=8" />
+<img width="49%" alt="GitHub istatistikleri" src="https://github-stats-extended.vercel.app/api?username=sheduxdev&show=reviews%2Cdiscussions_started%2Cdiscussions_answered%2Cprs_merged%2Cprs_merged_percentage%2Cprs_commented%2Cprs_reviewed%2Cissues_commented&show_icons=true&include_all_commits=true&theme=default_repocard" />
+<img width="49%" alt="En çok kullanılan diller" src="https://github-stats-extended.vercel.app/api/top-langs?username=sheduxdev&layout=compact&langs_count=20&theme=default_repocard" />
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/snake-dark.svg" />
