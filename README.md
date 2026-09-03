@@ -30,7 +30,8 @@ TurkishPvP LLC'nin sahibiyim, şu an altyapısını ölçeklendiriyorum.
 [Baso Network](https://baso.network/) ·
 [Refine Development](https://refinedev.org/) ·
 [Yusuf Te](https://www.youtube.com/@YusufTe) ·
-[Rtrix](http://rtrix.eu/)
+[Rtrix](http://rtrix.eu/) ·
+[Setkimkimya](https://setkimkimya.com/)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/snake-dark.svg" />
