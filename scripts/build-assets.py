@@ -1,166 +1,92 @@
-"""Renders the README's SVG panels with Sen embedded as a subset webfont.
+"""Renders the README header as a self-contained SVG with the name set in Sen.
 
-GitHub strips <style> from inline SVG and blocks external fetches from an
-<img>, so the only way to actually get Sen — rather than whatever sans-serif
-the reader happens to have — is to instance the variable font at one weight,
-subset it to the glyphs these panels use, and inline it as a data: URI.
+GitHub shows README images through an <img>, which loads no fonts, so the
+text is converted to outlines. Both themes share one geometry and differ only
+in fills. Sen[wght] is instanced at one weight and shaped with HarfBuzz so
+kerning survives the conversion.
 
-    pip install fonttools brotli
+    pip install fonttools brotli uharfbuzz
     python scripts/build-assets.py
 """
 
-import base64
 import io
-import re
 import subprocess
-import sys
 from pathlib import Path
+
+import uharfbuzz as hb
+from fontTools.pens.svgPathPen import SVGPathPen
+from fontTools.pens.transformPen import TransformPen
+from fontTools.ttLib import TTFont
+from fontTools.varLib.instancer import instantiateVariableFont
 
 ROOT = Path(__file__).resolve().parent.parent
 CACHE = ROOT / ".fontcache" / "sen.ttf"
 OUT = ROOT / "assets"
 SOURCE = "https://github.com/google/fonts/raw/main/ofl/sen/Sen%5Bwght%5D.ttf"
 
-# --- content -----------------------------------------------------------------
-
 NAME = "Deniz Usta"
-HANDLE = "@sheduxdev"
-TAGLINE = "Full stack geliştirici · 10+ yıl · Java ve Minecraft altyapısı"
-META = [
-    ("TurkishPvP LLC", "fg"),
-    ("turkishpvp.llc", "accent"),
-    ("sheduxdev@turkishpvp.llc", "muted"),
-]
+WEIGHT = 700
+SIZE = 56
+TRACKING = -0.025  # em
 
-STACK = [
-    ("DİLLER", ["Java", "TypeScript", "JavaScript", "Python", "PHP", "C", "C++", "C#"]),
-    ("ÖN YÜZ", ["React", "Next.js", "Tailwind", "HTML", "CSS"]),
-    ("ARKA YÜZ", ["Node.js", "Express", ".NET", "MySQL", "MongoDB", "Redis"]),
-    ("ALTYAPI", ["Docker", "Ubuntu", "Nginx", "Caddy", "Cloudflare", "GCP", "Firebase", "Pterodactyl"]),
-]
+# The README column is about 860px on desktop and 330px on a phone, so one
+# SVG unit is one CSS px on desktop and 0.38px on a phone. Only the name is
+# large enough to survive that; everything smaller lives in the markdown.
+W, H = 860, 92
+BASELINE = 78
+MARK = 10  # accent square, sits above the cap line
 
 THEMES = {
-    "dark": {"fg": "#e6edf3", "muted": "#8b949e", "rule": "#21262d", "accent": "#e02424"},
-    "light": {"fg": "#1f2328", "muted": "#59636e", "rule": "#d0d7de", "accent": "#bb0000"},
+    "dark": {"fg": "#e6edf3", "accent": "#e02424"},
+    "light": {"fg": "#1f2328", "accent": "#bb0000"},
 }
 
-W = 1200
-PAD = 48
 
-# --- font --------------------------------------------------------------------
-
-
-def font_data_uri(weight: int, glyphs: str) -> str:
-    """Instances Sen at one weight, keeps only `glyphs`, returns a woff2 data URI."""
-    from fontTools import subset
-    from fontTools.ttLib import TTFont
-    from fontTools.varLib.instancer import instantiateVariableFont
-
+def load_font() -> TTFont:
     if not CACHE.exists():
         CACHE.parent.mkdir(parents=True, exist_ok=True)
         subprocess.run(["curl", "-sL", "-o", str(CACHE), SOURCE], check=True)
-
-    font = instantiateVariableFont(TTFont(CACHE), {"wght": weight}, inplace=False)
-
-    options = subset.Options(flavor="woff2", desubroutinize=True)
-    options.layout_features = ["kern", "liga"]
-    subsetter = subset.Subsetter(options=options)
-    subsetter.populate(text=glyphs)
-    subsetter.subset(font)
-
-    buf = io.BytesIO()
-    font.save(buf)
-    return "data:font/woff2;base64," + base64.b64encode(buf.getvalue()).decode()
+    return instantiateVariableFont(TTFont(CACHE), {"wght": WEIGHT}, inplace=False)
 
 
-# --- svg ---------------------------------------------------------------------
+def text_path(font: TTFont, text: str, x: float, y: float, size: float) -> str:
+    """Shapes `text` and returns a single SVG path `d` for the whole run."""
+    blob = io.BytesIO()
+    font.save(blob)
+    hb_font = hb.Font(hb.Face(blob.getvalue()))
+    buf = hb.Buffer()
+    buf.add_str(text)
+    buf.guess_segment_properties()
+    hb.shape(hb_font, buf)
+
+    scale = size / font["head"].unitsPerEm
+    glyphs = font.getGlyphSet()
+    names = font.getGlyphOrder()
+    pen = SVGPathPen(glyphs, ntos=lambda v: f"{v:.1f}".rstrip("0").rstrip("."))
+    for info, pos in zip(buf.glyph_infos, buf.glyph_positions):
+        gx, gy = x + pos.x_offset * scale, y - pos.y_offset * scale
+        glyphs[names[info.codepoint]].draw(TransformPen(pen, (scale, 0, 0, -scale, gx, gy)))
+        x += pos.x_advance * scale + TRACKING * size
+    return pen.getCommands()
 
 
-def esc(text: str) -> str:
-    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-
-
-def shell(width: int, height: int, fonts: str, body: str) -> str:
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img">
-<style>
-{fonts}
-text {{ font-family: 'Sen'; }}
-</style>
-{body}
+def header(c: dict, d: str) -> str:
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img">
+<title>{NAME}</title>
+<rect x="0" y="12" width="{MARK}" height="{MARK}" fill="{c['accent']}"/>
+<path fill="{c['fg']}" d="{d}"/>
 </svg>
 """
 
 
-def face(weight: int, uri: str) -> str:
-    return (
-        "@font-face { font-family: 'Sen'; font-style: normal; "
-        f"font-weight: {weight}; src: url({uri}) format('woff2'); }}"
-    )
-
-
-def header(c: dict, fonts: str) -> str:
-    height = 196
-    rows = "".join(
-        f'<text x="{W - PAD}" y="{y}" text-anchor="end" font-size="14" '
-        f'font-weight="400" fill="{c[tone]}">{esc(value)}</text>'
-        for (value, tone), y in zip(META, (66, 94, 122))
-    )
-    return shell(
-        W,
-        height,
-        fonts,
-        f"""<rect x="{PAD}" y="54" width="7" height="7" fill="{c['accent']}"/>
-<text x="{PAD + 19}" y="61" font-size="13" font-weight="400" letter-spacing="0.6" fill="{c['muted']}">{esc(HANDLE)}</text>
-<text x="{PAD}" y="128" font-size="52" font-weight="700" letter-spacing="-1.4" fill="{c['fg']}">{esc(NAME)}</text>
-<text x="{PAD}" y="162" font-size="17" font-weight="400" fill="{c['muted']}">{esc(TAGLINE)}</text>
-{rows}""",
-    )
-
-
-def stack(c: dict, fonts: str) -> str:
-    row_height, top = 46, 42
-    parts = []
-    for i, (label, items) in enumerate(STACK):
-        y = top + i * row_height
-        joined = f'<tspan fill="{c["muted"]}"> · </tspan>'.join(esc(x) for x in items)
-        parts.append(
-            f'<text x="{PAD}" y="{y}" font-size="12" font-weight="700" '
-            f'letter-spacing="1.4" fill="{c["muted"]}">{esc(label)}</text>'
-            f'<text x="{PAD + 152}" y="{y}" font-size="16" font-weight="400" fill="{c["fg"]}">{joined}</text>'
-        )
-        if i < len(STACK) - 1:
-            parts.append(
-                f'<rect x="{PAD}" y="{y + 16}" width="{W - PAD * 2}" height="1" fill="{c["rule"]}"/>'
-            )
-    return shell(W, top + len(STACK) * row_height - 24, fonts, "\n".join(parts))
-
-
-# --- build -------------------------------------------------------------------
-
-
 def main() -> None:
-    glyphs = "".join(
-        sorted(
-            set(
-                NAME
-                + HANDLE
-                + TAGLINE
-                + "".join(v for v, _ in META)
-                + "".join(label + "".join(items) for label, items in STACK)
-                + " ·"
-            )
-        )
-    )
-
-    fonts = "\n".join(face(w, font_data_uri(w, glyphs)) for w in (400, 700))
-
+    d = text_path(load_font(), NAME, 0, BASELINE, SIZE)
     OUT.mkdir(exist_ok=True)
     for theme, colours in THEMES.items():
-        for name, render in (("header", header), ("stack", stack)):
-            path = OUT / f"{name}-{theme}.svg"
-            path.write_text(render(colours, fonts), encoding="utf-8")
-            print(f"{path.relative_to(ROOT)}  {path.stat().st_size // 1024} KB")
+        path = OUT / f"header-{theme}.svg"
+        path.write_text(header(colours, d), encoding="utf-8")
+        print(f"{path.relative_to(ROOT)}  {path.stat().st_size // 1024} KB")
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    main()

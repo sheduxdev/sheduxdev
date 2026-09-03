@@ -29,12 +29,12 @@ TRAIL = 5
 THEMES = {
     "dark": {
         "empty": "#161b22",
-        "levels": ["#161b22", "#3d0a0a", "#7a1010", "#bb0000", "#f43f3f"],
+        "levels": ["#161b22", "#2d333b", "#444c56", "#636e7b", "#8b949e"],
         "snake": "#e02424",
     },
     "light": {
         "empty": "#ebedf0",
-        "levels": ["#ebedf0", "#f7cfcf", "#e79191", "#c93a3a", "#bb0000"],
+        "levels": ["#ebedf0", "#d0d7de", "#afb8c1", "#8c959f", "#6e7781"],
         "snake": "#bb0000",
     },
 }
